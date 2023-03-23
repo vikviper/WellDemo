@@ -26,3 +26,5 @@ Ho aggiunto qualche test del metodo di risoluzione con JUnit e all'inizio del me
 
 Grazie della cortese attenzione,
 VM
+
+PS ho aggiunto la dipendenza per avere qui (http://localhost:8080/swagger-ui/index.html) la pagina di swagger per chiamare gli endpoint esposti. 
