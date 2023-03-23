@@ -39,23 +39,6 @@ public class DemoController {
         space.getPoints().clear();
         return "OK";
     }
-
-    @PostMapping("/points")
-    public String addPoints(){
-        space.getPoints().add(new Point(2,2));
-        space.getPoints().add(new Point(1,1));
-        space.getPoints().add(new Point(1,2));
-        space.getPoints().add(new Point(1,3));
-        space.getPoints().add(new Point(1,4));
-        space.getPoints().add(new Point(0,0));
-        space.getPoints().add(new Point(3,4));
-        space.getPoints().add(new Point(0,5));
-        space.getPoints().add(new Point(1,5));
-        space.getPoints().add(new Point(2,5));
-        space.getPoints().add(new Point(3,5));
-
-        return "OK";
-    }
 }
 
 

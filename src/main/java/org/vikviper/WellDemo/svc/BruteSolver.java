@@ -18,7 +18,10 @@ public class BruteSolver {
     public Set<LineSegment> getLinesWithNPoints(int minPoints) {
         Set<LineSegment> resultLines = new HashSet<>();
         int numElems = space.getPoints().size();
-        if (minPoints > numElems) return resultLines;
+
+        // controllo sul numero di elementi minimo richiesto
+        if (minPoints < 2 || minPoints > numElems)
+            throw new RuntimeException("Il numero minimo di punti richiesti (" + minPoints + ") è troppo piccolo o troppo grande.");
 
         // converte l'insieme dei punti in un array
         Point[] points = space.getPoints().toArray(new Point[numElems]);
